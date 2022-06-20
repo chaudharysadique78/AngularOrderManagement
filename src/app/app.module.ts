@@ -8,6 +8,9 @@ import { AboutComponent } from './components/about/about.component';
 import { OrderformComponent } from './components/orderform/orderform.component';
 import { ThankuComponent } from './components/thanku/thanku.component';
 import { ListComponent } from './components/list/list.component';
+import { HomeComponent } from './components/home/home.component';
+import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -16,11 +19,14 @@ import { ListComponent } from './components/list/list.component';
     AboutComponent,
     OrderformComponent,
     ThankuComponent,
-    ListComponent
+    ListComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
