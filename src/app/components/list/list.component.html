@@ -1,4 +1,4 @@
-<h1 style="text-align:center;margin: 2%">List of Orders</h1>
+<h1 style="text-align:center;margin: 4%">List of Orders</h1>
 <div style="margin: 2%;">
   <table class="table">
     <thead>
@@ -14,7 +14,7 @@
       <tr *ngFor="let u of orders; index as i">
         <td>#P{{u.id}}</td>
         <td>{{u.orderName}}</td>
-        <td>{{u.orderPrice}}</td>
+        <td>{{u.orderPrice | currency:"INR"}}</td>
         <td>{{u.brand}}</td>
         <td><button type="button" (click)="deleteRow(u,i)" class="btn btn-danger">Delete</button> &nbsp; 
           <button type="button" routerLink="/update/{{u.id}}" class="btn btn-danger">Update</button></td>
