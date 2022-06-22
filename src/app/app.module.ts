@@ -10,7 +10,8 @@ import { ThankuComponent } from './components/thanku/thanku.component';
 import { ListComponent } from './components/list/list.component';
 import { HomeComponent } from './components/home/home.component';
 import { FormsModule } from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { UpdateComponent } from './components/update/update.component'
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {HttpClientModule} from '@angular/common/http'
     OrderformComponent,
     ThankuComponent,
     ListComponent,
-    HomeComponent
+    HomeComponent,
+    UpdateComponent
   ],
   imports: [
     BrowserModule,

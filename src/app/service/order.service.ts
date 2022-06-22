@@ -20,7 +20,13 @@ export class OrderService {
   deleteOrder(order:any){
     return this.http.delete(BASE_URL+'deleteorder/'+order.id);
   }
+ getCurrentOrder(id){
+  return this.http.get(BASE_URL+'findorder/'+id);
+ }
 
+ updateOrder(order:any){
+  return this.http.put(BASE_URL+'updateorder/'+order.id,order);
+ }
 
   constructor(public http:HttpClient) { }
 }
